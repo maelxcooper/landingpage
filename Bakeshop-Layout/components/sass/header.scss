@@ -1,0 +1,54 @@
+@use 'styles' as *;
+
+
+header {
+    width: min(100% - 2rem, 1440px);
+    margin-inline: auto;
+
+    nav.navbar {
+        background: $priColor;
+        border-radius: 0 0 40px 40px;
+        padding: 0 20px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80px;
+
+            li {
+                a {
+                    margin: 0 110px;
+                    color: $white;
+                    position: relative;
+                    font-size: $m-fz;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background: rgb(255,255,255, 0.5);
+                        right: -6em;
+                        top: 7px;
+                    }
+                }
+                &:first-child {
+                    a {
+                        margin-left: 0;
+                    }
+                }
+
+                &:last-child {
+                        a {
+                            margin-right: 0;
+                            &::after {
+                                display: none;
+                            }
+                        }
+                }
+            }
+        }   
+    }
+}

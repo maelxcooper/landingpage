@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+/* Fonts */
+/* Font Size */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input:not([type=radio]):not([type=checkbox]),
+textarea, select {
+  -webkit-appearance: none;
+}
+
+form, label {
+  -webkit-text-size-adjust: 100%;
+}
+
+mark {
+  background-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2.main-heading {
+  font-size: clamp(40px, 4vw, 60px);
+  font-family: "Salsa", cursive;
+}
+
+main {
+  width: min(100% - 6rem, 1460px);
+}
+
+/*# sourceMappingURL=banner.css.map */

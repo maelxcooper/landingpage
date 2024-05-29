@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+$black: #000;
+$white: #fff;
+$font-color: #535353;
+$priColor: #11b9a4;
+$secColor: #f89829;
+
+/* Fonts */
+$priFont: "Salsa", cursive;
+$secFont: "Questrial", sans-serif;
+
+/* Font Size */
+$xs-fz: 14px;
+$s-fz: 16px;
+$m-fz: 18px;
+$sm-fz: 20px;
+$b-fz: 24px;
+$l-fz: 28px;
+$xl-fz: 34px;
+$xxl-fz: 40px;
+$h-fz: 50px;
+$xh-fz: 60px;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:before, *:after { 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  button, html input[type=button], 
+  input[type=reset], input[type=submit]  { 
+    -webkit-appearance: button; 
+    cursor: pointer; 
+  }
+  
+  input:not([type='radio']):not([type='checkbox']), 
+  textarea, select{
+    -webkit-appearance: none;
+  }
+  
+  form, label {
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  mark {
+    background-color: transparent;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: $secFont;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+h2.main-heading {
+    font-size: clamp($xxl-fz, 4vw, $xh-fz);
+    font-family: $priFont;
+}
+
+
+main {
+    width: min(100% - 6rem, 1460px);
+    margin-inline: auto;
+    position: relative;
+}
+
+section {
+    padding: 100px 0;
+}
+

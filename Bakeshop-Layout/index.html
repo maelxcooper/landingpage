@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="components/css/styles.css">
+  <link rel="stylesheet" href="components/css/header.css">
+  <title>CN Bakeshop</title>
+</head>
+<body>
+  <header id="header-container"></header>
+  <main id="main-container"></main>
+
+  <script>
+    // Function to load HTML content into a container
+    async function loadHTML(containerId, url) {
+      try {
+        const response = await fetch(url);
+        if (response.ok) {
+          const content = await response.text();
+          document.getElementById(containerId).innerHTML = content;
+        } else {
+          console.error('Failed to load content from', url);
+        }
+      } catch (error) {
+        console.error('Error fetching content:', error);
+      }
+    }
+
+    // Load the header and banner sections
+    loadHTML('header-container', 'components/sections/header.html');
+    loadHTML('main-container', 'components/sections/banner.html');
+  </script>
+</body>
+</html>

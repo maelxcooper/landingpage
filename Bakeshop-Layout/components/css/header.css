@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+/* Fonts */
+/* Font Size */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input:not([type=radio]):not([type=checkbox]),
+textarea, select {
+  -webkit-appearance: none;
+}
+
+form, label {
+  -webkit-text-size-adjust: 100%;
+}
+
+mark {
+  background-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2.main-heading {
+  font-size: clamp(40px, 4vw, 60px);
+  font-family: "Salsa", cursive;
+}
+
+main {
+  width: min(100% - 6rem, 1460px);
+}
+
+header {
+  width: min(100% - 2rem, 1440px);
+  margin-inline: auto;
+}
+header nav.navbar {
+  background: #11b9a4;
+  border-radius: 0 0 40px 40px;
+  padding: 0 20px;
+}
+header nav.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+}
+header nav.navbar ul li a {
+  margin: 0 110px;
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+}
+header nav.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  right: -6em;
+  top: 7px;
+}
+header nav.navbar ul li:first-child a {
+  margin-left: 0;
+}
+header nav.navbar ul li:last-child a {
+  margin-right: 0;
+}
+header nav.navbar ul li:last-child a::after {
+  display: none;
+}
+
+/*# sourceMappingURL=header.css.map */
