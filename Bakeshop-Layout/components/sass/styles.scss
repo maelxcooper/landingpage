@@ -14,14 +14,15 @@ $secFont: "Questrial", sans-serif;
 /* Font Size */
 $xs-fz: 14px;
 $s-fz: 16px;
-$m-fz: 18px;
+$m-fz: 19px;
 $sm-fz: 20px;
 $b-fz: 24px;
 $l-fz: 28px;
-$xl-fz: 34px;
+$xl-fz: 35px;
 $xxl-fz: 40px;
 $h-fz: 50px;
 $xh-fz: 60px;
+$xxh-fz: 70px;
 
 
 
@@ -37,24 +38,28 @@ $xh-fz: 60px;
     image-rendering: -webkit-optimize-contrast;
   }
 
-  button, html input[type=button], 
-  input[type=reset], input[type=submit]  { 
-    -webkit-appearance: button; 
-    cursor: pointer; 
-  }
+button, html input[type=button], 
+input[type=reset], input[type=submit]  { 
+  -webkit-appearance: button; 
+  cursor: pointer; 
+}
+
+input:not([type='radio']):not([type='checkbox']), 
+textarea, select{
+  -webkit-appearance: none;
+}
   
-  input:not([type='radio']):not([type='checkbox']), 
-  textarea, select{
-    -webkit-appearance: none;
-  }
-  
-  form, label {
-    -webkit-text-size-adjust: 100%;
-  }
-  
-  mark {
-    background-color: transparent;
-  }
+form, label {
+  -webkit-text-size-adjust: 100%;
+}
+
+mark {
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}
 
 html {
     scroll-behavior: smooth;
@@ -72,18 +77,32 @@ body {
 a {
     text-decoration: none;
     color: $black;
+    font-size: $m-fz;
 }
 
 ul {
     list-style-type: none;
 }
 
+h2 {
+  font-family: $priFont;
+}
 
 h2.main-heading {
     font-size: clamp($xxl-fz, 4vw, $xh-fz);
     font-family: $priFont;
 }
 
+p {
+  font-size: $m-fz;
+  color: $font-color;
+}
+
+.wrapper {
+  width: min(100% - 6rem, 1460px);
+  margin-inline: auto;
+  position: relative;
+}
 
 main {
     width: min(100% - 6rem, 1460px);

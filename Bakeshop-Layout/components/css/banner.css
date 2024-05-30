@@ -33,6 +33,10 @@ mark {
   background-color: transparent;
 }
 
+img {
+  max-width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,10 +52,15 @@ body {
 a {
   text-decoration: none;
   color: #000;
+  font-size: 19px;
 }
 
 ul {
   list-style-type: none;
+}
+
+h2 {
+  font-family: "Salsa", cursive;
 }
 
 h2.main-heading {
@@ -59,8 +68,109 @@ h2.main-heading {
   font-family: "Salsa", cursive;
 }
 
+p {
+  font-size: 19px;
+  color: #535353;
+}
+
+.wrapper {
+  width: min(100% - 6rem, 1460px);
+  margin-inline: auto;
+  position: relative;
+}
+
 main {
   width: min(100% - 6rem, 1460px);
+  margin-inline: auto;
+  position: relative;
+}
+
+section {
+  padding: 100px 0;
+}
+
+#banner-container {
+  padding: 50px 0 !important;
+}
+
+.main_logo {
+  display: block;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.bnr-grid {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+.bnr_slider {
+  width: min(762px, 100%);
+}
+
+.bnr_con {
+  width: min(580px, 100%);
+  margin-top: 6rem;
+  position: relative;
+}
+.bnr_con h2 {
+  font-size: 35px;
+  font-family: "Questrial", sans-serif;
+  font-weight: normal;
+}
+.bnr_con h2 span {
+  font-size: clamp(60px, 6vw, 70px);
+  display: block;
+  font-family: "Salsa", cursive;
+}
+
+.bnr_if {
+  margin: 1rem 0 0;
+  display: grid;
+  grid-gap: 1rem;
+}
+.bnr_if p {
+  font-size: 19px;
+}
+.bnr_if p span {
+  display: block;
+}
+.bnr_if a.g-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  width: min(258px, 100%);
+  background: #11b9a4;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding: 1.3rem;
+  font-size: 19px;
+  margin: 1.5rem 0;
+}
+.bnr_if a.g-btn span {
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bnr_contact {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  margin-top: 2rem;
+}
+.bnr_contact > * {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 /*# sourceMappingURL=banner.css.map */

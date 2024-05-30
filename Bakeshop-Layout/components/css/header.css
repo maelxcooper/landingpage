@@ -33,6 +33,10 @@ mark {
   background-color: transparent;
 }
 
+img {
+  max-width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,10 +52,15 @@ body {
 a {
   text-decoration: none;
   color: #000;
+  font-size: 19px;
 }
 
 ul {
   list-style-type: none;
+}
+
+h2 {
+  font-family: "Salsa", cursive;
 }
 
 h2.main-heading {
@@ -59,8 +68,25 @@ h2.main-heading {
   font-family: "Salsa", cursive;
 }
 
+p {
+  font-size: 19px;
+  color: #535353;
+}
+
+.wrapper {
+  width: min(100% - 6rem, 1460px);
+  margin-inline: auto;
+  position: relative;
+}
+
 main {
   width: min(100% - 6rem, 1460px);
+  margin-inline: auto;
+  position: relative;
+}
+
+section {
+  padding: 100px 0;
 }
 
 header {
@@ -82,7 +108,7 @@ header nav.navbar ul li a {
   margin: 0 110px;
   color: #fff;
   position: relative;
-  font-size: 18px;
+  font-size: 19px;
 }
 header nav.navbar ul li a::after {
   content: "";

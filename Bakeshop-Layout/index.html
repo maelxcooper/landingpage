@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="components/css/styles.css">
   <link rel="stylesheet" href="components/css/header.css">
+  <link rel="stylesheet" href="components/css/banner.css">
   <title>CN Bakeshop</title>
 </head>
 <body>
   <header id="header-container"></header>
-  <main id="main-container"></main>
+  <section id="banner-container"></section>
+  <main id="main-container"></section>
 
   <script>
     // Function to load HTML content into a container
@@ -29,7 +31,8 @@
 
     // Load the header and banner sections
     loadHTML('header-container', 'components/sections/header.html');
-    loadHTML('main-container', 'components/sections/banner.html');
+    loadHTML('banner-container', 'components/sections/banner.html');
+    loadHTML('main-container', 'components/sections/main.html');
   </script>
 </body>
 </html>

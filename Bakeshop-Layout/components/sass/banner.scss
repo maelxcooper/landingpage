@@ -1,2 +1,92 @@
 @use 'styles' as *;
 
+
+#banner-container {
+    padding: 50px 0 !important;
+}
+
+.main_logo {
+    display: block;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.bnr-grid {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.bnr_slider {
+    width: min(762px, 100%);
+}
+
+.bnr_con {
+        width: min(580px, 100%);
+        margin-top: 6rem;
+        position: relative;
+    h2 {
+        font-size: $xl-fz;
+        font-family: $secFont;
+        font-weight: normal;
+
+        span {
+            font-size: clamp($xh-fz, 6vw, $xxh-fz);
+            display: block;
+            font-family: $priFont;
+        }
+    }
+}
+
+.bnr_if {
+    margin: 1rem 0 0;
+    display: grid;
+    grid-gap: 1rem;
+
+    p {
+        font-size: $m-fz;
+
+        span {
+            display: block;
+        }
+    }
+
+    a.g-btn {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        width: min(258px, 100%);
+        background: $priColor;
+        color: $white;
+        border-radius: 50px;
+        text-align: center;
+        padding: 1.3rem;
+        font-size: $m-fz;
+        margin: 1.5rem 0;
+
+        span {
+            background: $white;
+            color: $black;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.bnr_contact {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    margin-top: 2rem;
+
+    > * {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+}
