@@ -1,0 +1,61 @@
+@use 'styles' as *;
+
+
+.mid-bg-wheat {
+    position: absolute;
+    top: -24em;
+    left: 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    margin-top: 2rem;
+
+    > div {
+        width: min(652px, 100%);
+    }
+
+    > div:first-child p {
+        text-align: right;
+    }
+}
+
+.serv-options {
+        display: grid;
+        grid-template-columns: 280px auto 280px;
+        margin-top: 2rem;
+        place-items: center;
+
+    .opt1 {
+        > div {    
+            text-align: right;
+
+            a {
+                margin: 0 0 0 auto;
+            }
+        }
+    }
+
+    > section {
+        min-height: auto;
+        padding: 0;
+        display: grid;
+        grid-gap: 12rem;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 1rem;
+
+            a {
+                margin: 0;
+            }
+        }
+    }
+
+    .br-img-con {
+        margin: 0 auto;
+    }
+}

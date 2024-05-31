@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="components/css/header.css">
   <link rel="stylesheet" href="components/css/banner.css">
   <link rel="stylesheet" href="components/css/services.css">
+  <link rel="stylesheet" href="components/css/welcome.css">
   <title>CN Bakeshop</title>
 </head>
 <body>
@@ -18,13 +19,28 @@
 
   
   <script>
-    // Function to load HTML content into a container
+  
     async function loadHTML(containerId, url) {
       try {
         const response = await fetch(url);
         if (response.ok) {
           const content = await response.text();
           document.getElementById(containerId).innerHTML = content;
+          
+          // Initialize menu toggle functionality if header is loaded
+          if (containerId === 'header-container') {
+            initializeMenuToggle();
+            initializeheaderAnimation();
+
+          } else if (containerId === 'banner-container') {
+            initializebannerAnimation();
+
+          } else if (containerId === 'services-container') {
+            initializedservicesAnimation();
+
+          } else if (containerId === 'welcome-container') {
+            initializedwelcomeAnimation();
+          }
         } else {
           console.error('Failed to load content from', url);
         }
@@ -39,6 +55,10 @@
     loadHTML('services-container', 'components/sections/services.html');
     loadHTML('welcome-container', 'components/sections/welcome.html');
   </script>
-  <script src="components/js/script.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="components/js/header.js"></script>
+  <script src="components/js/animation.js"></script>
 </body>
 </html>

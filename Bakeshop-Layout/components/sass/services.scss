@@ -4,13 +4,18 @@
 
 .serv-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
 
     > section {
         width: min(376px, 100%);
         display: grid;
         grid-gap: 2.5rem;
+        padding: 0;
+        min-height: auto;
 
         .figure-con {
             position: relative;
@@ -58,8 +63,6 @@
             display: block;
 
             h3 {
-                font-family: $priFont;
-                font-size: $l-fz;
                 text-align: center;
                 margin-bottom: 1rem;
             }

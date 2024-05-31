@@ -42,6 +42,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #495670 #0a192f;
+  overflow-x: hidden;
 }
 
 /* WebKit browsers */
@@ -71,6 +72,35 @@ a {
   text-decoration: none;
   color: #000;
   font-size: 19px;
+}
+
+a.g-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  width: min(258px, 100%);
+  background: #11b9a4;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding: 1.3rem;
+  font-size: 19px;
+  margin: 1.5rem 0;
+  transition: 0.5s ease;
+}
+a.g-btn:hover {
+  background: #f89829;
+}
+a.g-btn span {
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -106,6 +136,11 @@ h2.mainHeading::before {
   margin-inline: auto;
 }
 
+h3 {
+  font-family: "Salsa", cursive;
+  font-size: 30px;
+}
+
 p {
   font-size: 19px;
   color: #535353;
@@ -121,17 +156,23 @@ p {
 section {
   padding: 100px 0;
   position: relative;
+  min-height: 100vh;
 }
 
 .serv-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
 }
 .serv-flex > section {
   width: min(376px, 100%);
   display: grid;
   grid-gap: 2.5rem;
+  padding: 0;
+  min-height: auto;
 }
 .serv-flex > section .figure-con {
   position: relative;
@@ -173,8 +214,6 @@ section {
   display: block;
 }
 .serv-flex > section .serv-if h3 {
-  font-family: "Salsa", cursive;
-  font-size: 30px;
   text-align: center;
   margin-bottom: 1rem;
 }
