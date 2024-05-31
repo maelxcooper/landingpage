@@ -3,6 +3,13 @@
 
 #banner-container {
     padding: 50px 0 !important;
+
+    &::before {
+        content: url('../assets/images/top-wheat.svg');
+        position: absolute;
+        right: 0;
+        top: -3rem;
+    }
 }
 
 .main_logo {
@@ -64,6 +71,11 @@
         padding: 1.3rem;
         font-size: $m-fz;
         margin: 1.5rem 0;
+        transition: 0.5s ease;
+
+        &:hover {
+            background: $secColor;
+        }
 
         span {
             background: $white;
@@ -83,10 +95,14 @@
     justify-content: space-between;
     place-items: center;
     margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 10px;
 
     > * {
         display: flex;
         align-items: center;
         gap: 6px;
     }
+    
 }
+

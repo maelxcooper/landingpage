@@ -1,0 +1,68 @@
+@use 'styles' as *;
+
+
+
+.serv-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > section {
+        width: min(376px, 100%);
+        display: grid;
+        grid-gap: 2.5rem;
+
+        .figure-con {
+            position: relative;
+
+            a {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 122px;
+                height: 122px;
+                background: $priColor;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                color: $white;
+                padding-top: 6px;
+                transition: 0.3s ease;
+
+
+                &:hover {
+                    background: $secColor;
+                } 
+
+                span.arrow-icon {
+                    color: $black;
+                    width: 29px;
+                    height: 29px;
+                    text-align: center;
+                    background: $white;
+                    border-radius: 50%;
+                    display: grid;
+                    place-items: center;
+                    margin: 10px auto 0;
+                }
+            }
+        }
+        
+
+        .serv-if {
+            width: min(280px, 100%);
+            margin-inline: auto;
+            text-align: center;
+            display: block;
+
+            h3 {
+                font-family: $priFont;
+                font-size: $l-fz;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+        } 
+    }
+}

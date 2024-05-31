@@ -6,13 +6,17 @@
   <link rel="stylesheet" href="components/css/styles.css">
   <link rel="stylesheet" href="components/css/header.css">
   <link rel="stylesheet" href="components/css/banner.css">
+  <link rel="stylesheet" href="components/css/services.css">
   <title>CN Bakeshop</title>
 </head>
 <body>
   <header id="header-container"></header>
   <section id="banner-container"></section>
-  <main id="main-container"></section>
+  <section id="services-container"></section>
+  <section id="welcome-container"></section>
 
+
+  
   <script>
     // Function to load HTML content into a container
     async function loadHTML(containerId, url) {
@@ -32,7 +36,9 @@
     // Load the header and banner sections
     loadHTML('header-container', 'components/sections/header.html');
     loadHTML('banner-container', 'components/sections/banner.html');
-    loadHTML('main-container', 'components/sections/main.html');
+    loadHTML('services-container', 'components/sections/services.html');
+    loadHTML('welcome-container', 'components/sections/welcome.html');
   </script>
+  <script src="components/js/script.js"></script>
 </body>
 </html>
