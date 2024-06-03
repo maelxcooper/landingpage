@@ -159,53 +159,23 @@ section {
   min-height: 120vh;
 }
 
-.mid-bg-wheat {
-  position: absolute;
-  top: -28em;
-  left: 0;
-}
-
-.info-grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  place-items: center;
-  margin-top: 2rem;
-}
-.info-grid > div {
-  width: min(652px, 100%);
-}
-.info-grid > div:first-child p {
-  text-align: right;
-}
-
-.serv-options {
-  display: grid;
-  grid-template-columns: 280px auto 280px;
-  margin-top: 2rem;
-  place-items: center;
-}
-.serv-options .opt1 > div {
-  text-align: right;
-}
-.serv-options .opt1 > div a {
-  margin: 0 0 0 auto;
-}
-.serv-options > section {
-  min-height: auto;
-  padding: 0;
-  display: grid;
-  grid-gap: 12rem;
-}
-.serv-options > section > div {
+.mission-con {
   display: flex;
-  flex-direction: column;
-  grid-gap: 1rem;
-}
-.serv-options > section > div a {
-  margin: 0;
-}
-.serv-options .br-img-con {
-  margin: 0 auto;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
 }
 
-/*# sourceMappingURL=welcome.css.map */
+.mission-info {
+  display: grid;
+  grid-gap: 2rem;
+  width: min(592px, 100%);
+}
+.mission-info h2 {
+  text-align: left !important;
+}
+.mission-info h2::before {
+  display: none !important;
+}
+
+/*# sourceMappingURL=mission.css.map */

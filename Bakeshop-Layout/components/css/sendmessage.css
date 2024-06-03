@@ -159,53 +159,33 @@ section {
   min-height: 120vh;
 }
 
-.mid-bg-wheat {
-  position: absolute;
-  top: -28em;
-  left: 0;
+form .input-con {
+  display: grid;
+  grid-gap: 1.5rem;
+  margin: 2rem auto;
+}
+form .input-con > div input[type=text], form .input-con > div input[type=email], form .input-con > div textarea {
+  width: 100%;
+  border-radius: 40px;
+  outline: 0;
+  padding: 1.5rem;
+  border: 1px solid #bcbcbc;
+  resize: none;
+  color: #535353;
+  font-family: "Questrial", sans-serif;
+}
+form .input-con > div:first-child {
+  grid-area: 1/1/span 1/span 1;
+}
+form .input-con > div:nth-child(2) {
+  grid-area: 1/2/span 1/span 1;
+}
+form .input-con > div:last-child {
+  grid-area: 2/1/span 1/span 2;
+}
+form a.submit {
+  margin-inline: auto !important;
+  gap: 3rem !important;
 }
 
-.info-grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  place-items: center;
-  margin-top: 2rem;
-}
-.info-grid > div {
-  width: min(652px, 100%);
-}
-.info-grid > div:first-child p {
-  text-align: right;
-}
-
-.serv-options {
-  display: grid;
-  grid-template-columns: 280px auto 280px;
-  margin-top: 2rem;
-  place-items: center;
-}
-.serv-options .opt1 > div {
-  text-align: right;
-}
-.serv-options .opt1 > div a {
-  margin: 0 0 0 auto;
-}
-.serv-options > section {
-  min-height: auto;
-  padding: 0;
-  display: grid;
-  grid-gap: 12rem;
-}
-.serv-options > section > div {
-  display: flex;
-  flex-direction: column;
-  grid-gap: 1rem;
-}
-.serv-options > section > div a {
-  margin: 0;
-}
-.serv-options .br-img-con {
-  margin: 0 auto;
-}
-
-/*# sourceMappingURL=welcome.css.map */
+/*# sourceMappingURL=sendmessage.css.map */
