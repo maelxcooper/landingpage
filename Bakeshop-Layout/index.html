@@ -43,10 +43,15 @@
             initializebannerAnimation();
 
           } else if (containerId === 'services-container') {
-            initializedservicesAnimation();
+            initializeservicesAnimation();
 
           } else if (containerId === 'welcome-container') {
-            initializedwelcomeAnimation();
+            initializewelcomeAnimation();
+
+          } else if (containerId === 'mission-container') {
+            initializemissionAnimation();
+          } else if (containerId === 'sendmessage-container') {
+            initializesendmessageAnimation();
           }
         } else {
           console.error('Failed to load content from', url);
@@ -75,5 +80,7 @@
   <script src="components/js/bannerAnim.js"></script>
   <script src="components/js/servicesAnim.js"></script>
   <script src="components/js/welcomeAnim.js"></script>
+  <script src="components/js/missionAnim.js"></script>
+  <script src="components/js/sendmessageAnim.js"></script>
 </body>
 </html>

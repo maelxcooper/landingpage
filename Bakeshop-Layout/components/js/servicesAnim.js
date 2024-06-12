@@ -1,7 +1,7 @@
 // Gsap Scrolltrigger
 gsap.registerPlugin(ScrollTrigger);
 
-function initializedservicesAnimation() {
+function initializeservicesAnimation() {
 
     gsap.from("#services-container h2", {
         scrollTrigger: "#services-container", 

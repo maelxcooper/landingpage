@@ -2,7 +2,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-function initializedwelcomeAnimation() {
+function initializewelcomeAnimation() {
 
     gsap.from('.mid-bg-wheat', {
         scrollTrigger: '#welcome-container',
@@ -15,7 +15,7 @@ function initializedwelcomeAnimation() {
         scrollTrigger: "#welcome-container", 
         opacity: 0,
         scale: 0.5,
-        delay: 2,
+        delay: 1,
         duration: 0.5,
         ease: 'back.out(1.7)'
     })
