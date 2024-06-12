@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Generator: Xara Designer (www.xara.com), SVG filter version: 6.7.0.0-->
+<svg fill="none" fill-rule="evenodd" stroke="black" stroke-width="0.501" stroke-linejoin="bevel" stroke-miterlimit="10" font-family="Times New Roman" font-size="16" style="font-variant-ligatures:none" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="39.995pt" height="39.995pt" viewBox="-992.25 -232.382 39.995 39.995">
+ <defs>
+	</defs>
+ <g id="MouseOff" transform="scale(1 -1)">
+  <g id="Group" fill-rule="evenodd" stroke-linejoin="miter" stroke="none" stroke-width="0.278">
+   <rect x="-19.996" y="-19.997" width="39.993" height="39.995" rx="545.507368432141" ry="545.507368432141" transform="translate(-972.252 212.385) rotate(90)" fill="#3b5998"/>
+   <path d="M -967.123,212.408 L -970.433,212.408 L -970.433,200.283 L -975.445,200.283 L -975.445,212.408 L -977.832,212.408 L -977.832,216.668 L -975.445,216.668 L -975.445,219.426 C -975.445,221.397 -974.511,224.486 -970.389,224.486 L -966.672,224.47 L -966.672,220.331 L -969.368,220.331 C -969.812,220.331 -970.433,220.113 -970.433,219.172 L -970.433,216.664 L -966.685,216.664 L -967.123,212.408 Z" fill="#ffffff" marker-start="none" marker-end="none"/>
+  </g>
+ </g>
+ <g id="MouseOver" transform="scale(1 -1)"/>
+</svg>
