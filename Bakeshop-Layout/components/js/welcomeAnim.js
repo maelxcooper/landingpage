@@ -23,28 +23,28 @@ function initializewelcomeAnimation() {
     gsap.from('.info1', {
         scrollTrigger: '.info-grid',
         opacity: 0,
-        delay: 2,
+        delay: 1.5,
         x: -20
     })
 
     gsap.from('.info2', {
         scrollTrigger: '.info-grid',
         opacity: 0,
-        delay: 2,
+        delay: 1.5,
         x: 20
     })
 
     gsap.from('.opt1 div:first-child', {
         scrollTrigger: '.serv-options',
         opacity: 0,
-        delay: 2,
+        delay: 1,
         x: -20
     })
 
     gsap.from('.opt1 div:nth-child(2)', {
         scrollTrigger: '.serv-options',
         opacity: 0,
-        delay: 2.5,
+        delay: 1.5,
         x: -20
     })
 
@@ -61,14 +61,14 @@ function initializewelcomeAnimation() {
     gsap.from('.opt2 div:first-child', {
         scrollTrigger: '.serv-options',
         opacity: 0,
-        delay: 3,
+        delay: 2,
         x: 20
     })
 
     gsap.from('.opt2 div:nth-child(2)', {
         scrollTrigger: '.serv-options',
         opacity: 0,
-        delay: 3.5,
+        delay: 2.5,
         x: 20
     })
 
