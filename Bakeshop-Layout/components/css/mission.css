@@ -147,7 +147,7 @@ p {
 }
 
 .wrapper {
-  width: min(100% - 6rem, 1460px);
+  width: min(100% - 6rem, 1400px);
   margin-inline: auto;
   position: relative;
 }

@@ -1,0 +1,7 @@
+@media (max-width: 1000px) {
+  .bnr-grid {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=breakpoints.css.map */

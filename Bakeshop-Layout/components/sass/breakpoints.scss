@@ -5,3 +5,17 @@ $breakpoints: (
     "lg": 1000px,
     "xl": 1400px,
 );
+
+@mixin respond-to($breakpoint) {
+  $value: map-get($breakpoints, $breakpoint);
+  @media (max-width: $value) {
+    @content;
+  }
+}
+
+// Banner Area
+.bnr-grid {
+    @include respond-to(lg) {
+        flex-direction: column; 
+      }
+}
