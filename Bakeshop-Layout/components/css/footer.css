@@ -65,7 +65,6 @@ body {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
-  overflow-y: auto;
 }
 
 a {
@@ -159,8 +158,31 @@ section {
   min-height: 100vh;
 }
 
+#footer-container {
+  position: relative;
+}
+
+.fig1 {
+  position: absolute;
+  left: 0;
+  bottom: -8rem;
+}
+
+.fig2 {
+  position: absolute;
+  right: 0;
+  bottom: -8rem;
+}
+
 .footer-con {
-  min-height: 120vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ftr-socmed-container {
+  position: relative;
 }
 
 .ftr_map iframe {
@@ -180,6 +202,44 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 634px auto;
+  align-items: center;
+}
+
+.info-title h2 {
+  text-align: left;
+}
+.info-title h2::before {
+  display: none;
+}
+
+.num-add ul {
+  display: flex;
+  font-size: 19px;
+  color: #535353;
+  justify-content: space-between;
+  align-items: center;
+}
+.num-add ul li {
+  position: relative;
+  padding-left: 4.5rem;
+}
+.num-add ul li span {
+  display: block;
+  margin-top: 0.2rem;
+}
+.num-add ul li::before {
+  content: url("../assets/images/location-icon.svg");
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+}
+.num-add ul li:last-child::before {
+  content: url("../assets/images/mail-icon.svg");
 }
 
 /*# sourceMappingURL=footer.css.map */

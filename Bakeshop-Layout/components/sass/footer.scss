@@ -1,8 +1,31 @@
 @use 'styles' as *;
 
 
+#footer-container {
+    position: relative;
+}
+
+.fig1 {
+    position: absolute;
+    left: 0;
+    bottom: -8rem;
+}
+
+.fig2 {
+    position: absolute;
+    right: 0;
+    bottom: -8rem;
+}
+
 .footer-con {
-    min-height: 120vh;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ftr-socmed-container {
+    position: relative;
 }
 
 .ftr_map iframe {
@@ -10,7 +33,6 @@
     height: 475px;
     border-radius: 80px;
 }
-
 
 .soc-med {
     position: absolute;
@@ -24,3 +46,52 @@
         gap: 1rem;
     }
 }
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 634px auto;
+    align-items: center;
+}
+
+.info-title {
+    h2 {
+        text-align: left;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.num-add {
+    ul {
+        display: flex;
+        font-size: $m-fz;
+        color: $font-color;
+        justify-content: space-between;
+        align-items: center;
+        
+        li {
+            position: relative;
+            padding-left: 4.5rem;
+
+            span {
+                display: block;
+                margin-top: 0.2rem;
+            } 
+
+            &::before {
+                content: url('../assets/images/location-icon.svg');
+                position: absolute;
+                top: -0.5rem;
+                left: 0;
+            }
+            
+        }
+
+        li:last-child::before {
+            content: url('../assets/images/mail-icon.svg');
+        }
+    }
+}
+
