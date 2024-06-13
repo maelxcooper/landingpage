@@ -12,6 +12,8 @@
 function initializeMenuToggle() {
     let menu = document.querySelector('#toggle_menu');
     let navbar = document.querySelector('.navbar');
+    let navBurger = document.querySelector('.hamburger-menu');
+    let navHold = document.querySelector('.toggle-holder');
   
     menu.onclick = () => {
         console.log('yawa')
@@ -20,14 +22,19 @@ function initializeMenuToggle() {
     };
     
     window.onresize = () => {
+        if (window.innerWidth < 1000) {
+            navHold.appendChild(navBurger);
+        } else {
+            navHold.insertAdjacentElement('afterend', navBurger);
+        }
+
         if (window.innerWidth > 1000 && navbar.classList.contains('open')) {
             menu.classList.toggle('bx-x');
            navbar.classList.remove('open');
         }
     }
 
-
-    
+        
   }
   
 

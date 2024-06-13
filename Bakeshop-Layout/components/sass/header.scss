@@ -2,13 +2,13 @@
 
 
 header {
-    width: min(100% - 2rem, 1440px);
-    margin-inline: auto;
-
+    width: 100%;
     nav {
         background: $priColor;
         border-radius: 0 0 40px 40px;
         padding: 0 20px;
+        width: min(1440px, 100% - 2rem);
+        margin-inline: auto;
 
         ul {
             display: flex;
@@ -54,9 +54,9 @@ header {
 }
 
 
-// #menu__toggle {
-//     opacity: 0;
-//   }
+#menu__toggle {
+    opacity: 0;
+  }
 
 
 // @media only screen and (max-width: 1000px) {
