@@ -65,6 +65,7 @@ body {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 a {
@@ -169,6 +170,109 @@ section {
   }
 }
 
+@media (max-width: 1000px) {
+  html.blur {
+    overflow: hidden;
+  }
+  body.blur #content > * {
+    filter: blur(5px) brightness(0.7);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    pointer-events: none;
+    user-select: none;
+  }
+  .overlay.mob {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .mob_logo {
+    display: block;
+  }
+  .main_logo {
+    display: none;
+  }
+  .toggle-holder {
+    margin: 20px;
+  }
+  #toggle_menu.bx-x span {
+    transform: rotate(45deg);
+  }
+  #toggle_menu.bx-x span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #toggle_menu.bx-x span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .menu__btn {
+    position: absolute;
+    top: 3em;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f89829;
+    transition-duration: 0.25s;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .hamburger-menu nav ul {
+    position: fixed;
+    right: -175%;
+    top: 0;
+    padding: 80px 0;
+    width: 20em;
+    background: #000;
+    height: 100%;
+    transition: 0.4s;
+    flex-direction: column;
+    gap: 2em;
+    z-index: 4;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-duration: 0.26s;
+  }
+  .hamburger-menu nav ul li {
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+  }
+  .hamburger-menu nav ul li:hover {
+    background: #11b9a4;
+  }
+  .hamburger-menu nav ul li a {
+    margin: 0;
+  }
+  .hamburger-menu nav ul li a:after {
+    display: none;
+  }
+  .hamburger-menu nav ul.open {
+    right: 0 !important;
+  }
+  .bg-wheat {
+    display: none;
+  }
+}
 @media (max-width: 1000px) {
   .bnr-grid {
     flex-direction: column;
