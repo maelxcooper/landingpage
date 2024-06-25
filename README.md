@@ -26,4 +26,4 @@ This project involves converting a given design mockup into a fully responsive w
 - Responsive design that adapts to different screen sizes (mobile, tablet, desktop)
 - Clean and semantic HTML markup
 - Modular and maintainable CSS
-- [Any additional features, such as animations, interactive elements, etc.]
+- Animations
