@@ -5,14 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="components/assets/images/favicon.svg">
   <link rel="stylesheet" href="components/css/styles.css">
-  <link rel="stylesheet" href="components/css/header.css">
-  <link rel="stylesheet" href="components/css/banner.css">
-  <link rel="stylesheet" href="components/css/services.css">
-  <link rel="stylesheet" href="components/css/welcome.css">
-  <link rel="stylesheet" href="components/css/mission.css">
-  <link rel="stylesheet" href="components/css/sendmessage.css">
-  <link rel="stylesheet" href="components/css/footer.css">
-  <link rel="stylesheet" href="components/css/breakpoints.css">
   <title>CN Bakeshop</title>
 </head>
 <body>
@@ -38,7 +30,7 @@
             
             initializeMenuToggle();
 
-            // Check screen width
+
             if (window.innerWidth > 600) {
                 // Initialize animations based on containerId
                 switch (containerId) {
@@ -61,7 +53,7 @@
                         initializesendmessageAnimation();
                         break;
                     default:
-                        // Handle default case or do nothing if necessary
+  
                         break;
                 }
             }
@@ -86,14 +78,14 @@ loadHTML('footer-container', 'components/sections/footer.html');
 
 
   
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
- <script src="components/js/header.js"></script> 
- <script src="components/js/headerAnim.js"></script>
-  <script src="components/js/bannerAnim.js"></script>
-  <script src="components/js/servicesAnim.js"></script>
-  <script src="components/js/welcomeAnim.js"></script>
-  <script src="components/js/missionAnim.js"></script>
-  <script src="components/js/sendmessageAnim.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="components/js/header.js"></script> 
+<script src="components/js/headerAnim.js"></script>
+<script src="components/js/bannerAnim.js"></script>
+<script src="components/js/servicesAnim.js"></script>
+<script src="components/js/welcomeAnim.js"></script>
+<script src="components/js/missionAnim.js"></script>
+<script src="components/js/sendmessageAnim.js"></script>
 </body>
 </html>
