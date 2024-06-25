@@ -111,19 +111,19 @@ h2 {
   font-family: "Salsa", cursive;
 }
 
-h2.mainHeading {
+.mainHeading {
   font-size: 30px;
   font-family: "Questrial", sans-serif;
   font-weight: normal;
   text-align: center;
   position: relative;
 }
-h2.mainHeading span {
+.mainHeading span {
   font-size: clamp(50px, 6vw, 60px);
   display: block;
   font-family: "Salsa", cursive;
 }
-h2.mainHeading::before {
+.mainHeading::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -161,6 +161,7 @@ section {
 
 header {
   width: 100%;
+  animation: slideDown 1s ease-out;
 }
 header nav {
   background: #11b9a4;
@@ -207,6 +208,17 @@ header nav ul li:last-child a::after {
 
 #menu__toggle {
   opacity: 0;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

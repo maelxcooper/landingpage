@@ -111,19 +111,19 @@ h2 {
   font-family: "Salsa", cursive;
 }
 
-h2.mainHeading {
+.mainHeading {
   font-size: 30px;
   font-family: "Questrial", sans-serif;
   font-weight: normal;
   text-align: center;
   position: relative;
 }
-h2.mainHeading span {
+.mainHeading span {
   font-size: clamp(50px, 6vw, 60px);
   display: block;
   font-family: "Salsa", cursive;
 }
-h2.mainHeading::before {
+.mainHeading::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -179,6 +179,9 @@ section {
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     pointer-events: none;
     user-select: none;
+  }
+  header {
+    animation: none;
   }
   .overlay.mob {
     position: fixed;

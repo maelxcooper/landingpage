@@ -11,7 +11,7 @@ function initializewelcomeAnimation() {
         x: -400
     })
 
-    gsap.from("#welcome-container h2", {
+    gsap.from("#welcome-container h1", {
         scrollTrigger: "#welcome-container", 
         opacity: 0,
         scale: 0.5,

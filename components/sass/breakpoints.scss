@@ -46,6 +46,9 @@ body.blur #content > * {
     user-select: none;
 }
 
+header {
+  animation: none;
+}
 
 .overlay.mob {
   position: fixed;
