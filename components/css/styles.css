@@ -470,6 +470,9 @@ header nav ul li:last-child a::after {
 }
 
 @media (max-width: 1000px) {
+  .bnr_slider {
+    width: min(540px, 100%);
+  }
   .bnr-grid {
     flex-direction: column;
     align-items: center;
@@ -1140,6 +1143,9 @@ form a.submit {
 }
 
 @media (max-width: 1000px) {
+  .bnr_slider {
+    width: min(540px, 100%);
+  }
   .bnr-grid {
     flex-direction: column;
     align-items: center;
