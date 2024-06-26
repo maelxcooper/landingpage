@@ -3,6 +3,7 @@
 
 #footer-container {
     position: relative;
+    padding: 0 20px;
 }
 
 .fig1 {
@@ -49,12 +50,14 @@
 }
 
 .contact-info {
-    display: grid;
-    grid-template-columns: 634px auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 0.5rem
 }
 
 .info-title {
+    width: min(560px, 100%);
     h2 {
         text-align: left;
 
@@ -65,12 +68,14 @@
 }
 
 .num-add {
+    width: min(764px, 100%);
     ul {
         display: flex;
         font-size: $m-fz;
         color: $font-color;
         justify-content: space-between;
         align-items: center;
+        gap: 1rem;
         
         li {
             position: relative;

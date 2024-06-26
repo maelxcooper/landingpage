@@ -4,10 +4,16 @@ $breakpoints: (
     "xs": 0,
     "sm": 600px,
     "md": 720px,
+    "lv":800px,
     "lg": 1000px,
-    "xl": 1300px,
-    "xxl": 1200px,
-    "xxxl": 1400px,
+    "ds-1": 1100px,
+    "ds-2": 1200px,
+    "ds-3": 1300px,
+    "ds-4": 1400px,
+    "ds-5": 1550px,
+    "ds-6": 1650px,
+    "ds-7": 1750px,
+    "ds-8": 1850px,
 );
 
 @mixin respond-to($breakpoint) {
@@ -17,15 +23,29 @@ $breakpoints: (
   }
 }
 
+section {
+  @include respond-to(lg) {
+    padding: 70px 20px;
+    min-height: auto !important;
+  }
+}
+
+.mainHeading::before {
+  @include respond-to(lg) {
+    top: -4rem;
+    width: 8px;
+    height: 50px;
+  }
+}
 
 // Nav Area
 header {
     nav {
       ul li a {
-          @include respond-to(xl) {
+          @include respond-to(ds-2) {
             margin: 0 90px;
           }
-          @include respond-to(xxl) {
+          @include respond-to(ds-3) {
             margin: 0 70px;
           }
       }
@@ -64,6 +84,7 @@ header {
 
 .mob_logo {
   display: block;
+  width: min(140px, 100%);
 }
 .main_logo {
   display: none;
@@ -150,8 +171,6 @@ header {
   
 }
 
-
-
 .hamburger-menu nav ul.open {
 right: 0 !important;
 }
@@ -163,11 +182,266 @@ right: 0 !important;
 }
 
 
+
 // Banner Area
-.bnr-grid {
-    @include respond-to(lg) {
-        flex-direction: column; 
+.bg-wheat {
+  @include respond-to(ds-6) {
+      right: -4rem;
+  }
+  @include respond-to(ds-5) {
+    right: -8rem;
+}
+  @include respond-to(ds-3) {
+    right: -12rem;
+}
+ 
+}
+
+@include respond-to(lg) {
+  .bnr-grid {
+    flex-direction: column; 
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .bnr_con {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0 4rem 0;
+  }
+
+  .bnr_if p span {
+    display: unset;
+  }
+
+  .bnr_if a.g-btn  {
+    margin: 1.5rem auto 0;
+  }
+  .bnr_contact {
+    justify-content: center;
+    gap: 2rem 4rem;
+    
+    > * {
+      flex-direction: column;
+      gap: 16px;
+
+      a span {
+        display: block;
       }
+    }
+      @include respond-to(sm) {
+          flex-direction: column;
+          gap: 2rem;
+      }
+  }
+
+}
+// End of Banner Area
+
+
+
+// Welcome Area
+
+.mid-bg-wheat {
+  @include respond-to(ds-7) {
+    left: -4rem;
+  }
+  @include respond-to(ds-6) {
+    left: -8rem;
+  }
+  @include respond-to(ds-5) {
+    left: -10rem;
+  }
+  @include respond-to(ds-4) {
+    left: -12rem;
+  }
+  @include respond-to(ds-2) {
+    left: -2rem;
+  }
+  @include respond-to(ds-1) {
+    left: -6rem;
+  }
+  @include respond-to(lg) {
+   display: none;
+  }
 }
 
 
+@include respond-to(lg) {
+  .serv-options {
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+    margin: 3rem 0 0;
+
+    section {
+      grid-gap: 4rem;
+          > div {
+          text-align: center !important;
+          
+          a {
+            margin: 0 auto !important;
+            padding: 1rem;
+          }
+        }
+        @include respond-to(sm) {
+          grid-gap: 2rem;
+        }
+    }
+    @include respond-to(sm) {
+      grid-template-columns: auto;
+    }
+ }
+
+.serv-options .br-img-con {
+  display: none;
+}
+}
+// End of Welcome Area
+
+// Mission Statement Area
+@include respond-to(lg) {
+  .mission-con {
+    justify-content: center;
+  }
+
+  .mission-info {
+    width: 100%;
+
+    h2 {
+      text-align: center !important;
+    }
+    p {
+      text-align: center;
+    }
+    a {
+        margin: 1.5rem auto 0;
+    }
+  }
+   .mission-img {
+      display: none;
+   }
+}
+
+// Mission Statement Area
+
+// Send Us A Message Area
+form .input-con {
+  > * {
+  @include respond-to(sm) {
+      grid-area: unset !important;
+   }
+
+  }
+}
+// End of Send Message Area
+
+// Footer Area
+.fig1 {
+    @include respond-to(ds-8) {
+      left: -4rem;
+    }  
+    @include respond-to(ds-7) {
+      left: -6rem;
+    }  
+    @include respond-to(ds-6) {
+      left: -9rem;
+    }  
+    @include respond-to(ds-5) {
+      left: -12rem;
+    }    
+    @include respond-to(lg) {
+      display: none;
+    } 
+}
+
+.fig2 {
+  @include respond-to(ds-8) {
+    right: -4rem;
+  }  
+  @include respond-to(ds-7) {
+    right: -6rem;
+  }  
+  @include respond-to(ds-6) {
+    right: -9rem;
+  }  
+  @include respond-to(ds-5) {
+    right: -12rem;
+  }  
+  @include respond-to(lg) {
+    display: none;
+  } 
+}
+
+
+.num-add {
+  ul {
+      li {
+      
+        @include respond-to(ds-3) {
+          padding-left: 0;
+        }
+        &::before {
+            @include respond-to(ds-3) {
+              position: static;
+              display: block;
+              text-align: center;
+              margin-bottom: 10px;
+            }
+        }
+      }
+  }
+}
+
+.info-title {
+  h2 {
+     span {
+      @include respond-to(ds-4) {
+        font-size: clamp($xxl-fz, 4vw, $h-fz);
+      }
+     }
+  }
+}
+
+@include respond-to(lg) {
+  .contact-info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .info-title h2 {
+    text-align: center;
+  }
+
+  .num-add ul {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      place-items: center;
+
+      @include respond-to(lv) {
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 4rem;
+        text-align: center;
+      }
+  }
+
+  .copyright {
+    margin: 3rem 0 0;
+    width: 100%;
+
+    ul {
+      @include respond-to(sm) {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+  }
+
+  .soc-med {
+    position: static;
+  }
+}
+
+
+
+
+// End of Footer Area

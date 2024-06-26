@@ -19,6 +19,27 @@
   <footer id="footer-container"></footer>
 </div>
 
+
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- GSAP & ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<!-- Custom Scripts for Animation -->
+<script src="components/js/header.js"></script> 
+<script src="components/js/headerAnim.js"></script>
+<script src="components/js/bannerAnim.js"></script>
+<script src="components/js/servicesAnim.js"></script>
+<script src="components/js/welcomeAnim.js"></script>
+<script src="components/js/missionAnim.js"></script>
+<script src="components/js/sendmessageAnim.js"></script>
+<script src="components/js/footerAnim.js"></script>
+<script src="components/js/footer.js"></script>
+
+<!-- Load Separate HTML files -->
 <script>
     async function loadHTML(containerId, url) {
     try {
@@ -30,13 +51,9 @@
             
             initializeMenuToggle();
 
-
-            if (window.innerWidth > 600) {
+            if (window.innerWidth > 1000) {
                 // Initialize animations based on containerId
                 switch (containerId) {
-                    case 'header-container':
-                        initializeheaderAnimation();
-                        break;
                     case 'banner-container':
                         initializebannerAnimation();
                         break;
@@ -52,11 +69,20 @@
                     case 'sendmessage-container':
                         initializesendmessageAnimation();
                         break;
+                    case 'footer-container':
+                        initializefooterAnimation();
+                        break;
                     default:
   
                         break;
                 }
             }
+
+            // Always initialize footer-specific functions
+            if (containerId === 'footer-container') {
+                initializefooterSwap();
+            }
+
         } else {
             console.error('Failed to load content from', url);
         }
@@ -75,17 +101,5 @@ loadHTML('sendmessage-container', 'components/sections/sendmessage.html');
 loadHTML('footer-container', 'components/sections/footer.html');
 
   </script>
-
-
-  
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="components/js/header.js"></script> 
-<script src="components/js/headerAnim.js"></script>
-<script src="components/js/bannerAnim.js"></script>
-<script src="components/js/servicesAnim.js"></script>
-<script src="components/js/welcomeAnim.js"></script>
-<script src="components/js/missionAnim.js"></script>
-<script src="components/js/sendmessageAnim.js"></script>
 </body>
 </html>

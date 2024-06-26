@@ -14,7 +14,7 @@ gsap.from("#sendmessage-container h2", {
 gsap.from('.form-container', {
     scrollTrigger: '.form-container',
     opacity: 0,
-    delay: 1.6,
+    delay: 1.4,
     y: 20
 })
 

@@ -6,14 +6,14 @@ function initializemissionAnimation() {
     gsap.from('.mission-info', {
         scrollTrigger: '.mission-info',
         opacity: 0,
-        delay: 1.5,
+        delay: 1,
         x: -20
     })
 
     gsap.from('.mission-img', {
         scrollTrigger: '.mission-info',
         opacity: 0,
-        delay: 2,
+        delay: 1.5,
         x: 20
     })
 

@@ -52,7 +52,7 @@ function initializewelcomeAnimation() {
         scrollTrigger: ".serv-options", 
         opacity: 0,
         scale: 0.5,
-        delay: 3,
+        delay: 2.4,
         duration: 1,
         ease: 'back.out(1.7)',
         y: -100
@@ -61,14 +61,14 @@ function initializewelcomeAnimation() {
     gsap.from('.opt2 div:first-child', {
         scrollTrigger: '.serv-options',
         opacity: 0,
-        delay: 2,
+        delay: 1.8,
         x: 20
     })
 
     gsap.from('.opt2 div:nth-child(2)', {
         scrollTrigger: '.serv-options',
         opacity: 0,
-        delay: 2.5,
+        delay: 2,
         x: 20
     })
 

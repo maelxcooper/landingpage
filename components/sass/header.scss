@@ -4,6 +4,8 @@
 header {
     width: 100%;
     animation: slideDown 1s ease-out;
+    position: relative;
+    z-index: 1;
     nav {
         background: $priColor;
         border-radius: 0 0 40px 40px;
