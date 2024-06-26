@@ -655,6 +655,11 @@ header nav ul li:last-child a::after {
     padding-left: 0;
   }
 }
+@media (max-width: 1200px) {
+  .num-add ul li {
+    font-size: 17px;
+  }
+}
 @media (max-width: 1300px) {
   .num-add ul li::before {
     position: static;
@@ -1315,6 +1320,11 @@ form a.submit {
 @media (max-width: 1300px) {
   .num-add ul li {
     padding-left: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .num-add ul li {
+    font-size: 17px;
   }
 }
 @media (max-width: 1300px) {
