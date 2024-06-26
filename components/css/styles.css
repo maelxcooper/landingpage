@@ -676,6 +676,9 @@ header nav ul li:last-child a::after {
 }
 
 @media (max-width: 1000px) {
+  .ftr_map iframe {
+    border-radius: 0;
+  }
   .contact-info {
     flex-direction: column;
     gap: 2rem;
@@ -1343,6 +1346,9 @@ form a.submit {
 }
 
 @media (max-width: 1000px) {
+  .ftr_map iframe {
+    border-radius: 0;
+  }
   .contact-info {
     flex-direction: column;
     gap: 2rem;

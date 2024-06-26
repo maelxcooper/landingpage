@@ -407,6 +407,11 @@ form .input-con {
 }
 
 @include respond-to(lg) {
+
+  .ftr_map iframe {
+    border-radius: 0;
+  }
+  
   .contact-info {
     flex-direction: column;
     gap: 2rem;
