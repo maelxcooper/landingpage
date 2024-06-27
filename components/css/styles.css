@@ -112,14 +112,14 @@ h2 {
 }
 
 .mainHeading {
-  font-size: 30px;
+  font-size: clamp(30px, 6vw, 26px);
   font-family: "Questrial", sans-serif;
   font-weight: normal;
   text-align: center;
   position: relative;
 }
 .mainHeading span {
-  font-size: clamp(50px, 6vw, 60px);
+  font-size: clamp(40px, 6vw, 60px);
   display: block;
   font-family: "Salsa", cursive;
 }
@@ -144,7 +144,7 @@ h3 {
 p {
   font-size: 19px;
   color: #535353;
-  line-height: 24px;
+  line-height: 26px;
 }
 
 .wrapper {
@@ -254,12 +254,12 @@ header nav ul li:last-child a::after {
   position: relative;
 }
 .bnr_con h2 {
-  font-size: 35px;
+  font-size: clamp(26px, 6vw, 35px);
   font-family: "Questrial", sans-serif;
   font-weight: normal;
 }
 .bnr_con h2 span {
-  font-size: clamp(60px, 6vw, 70px);
+  font-size: clamp(50px, 6vw, 70px);
   display: block;
   font-family: "Salsa", cursive;
 }
@@ -343,6 +343,12 @@ header nav ul li:last-child a::after {
 @media (max-width: 1300px) {
   header nav ul li a {
     margin: 0 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  p {
+    font-size: 17px !important;
   }
 }
 
@@ -571,6 +577,13 @@ header nav ul li:last-child a::after {
   }
 }
 @media (max-width: 1000px) {
+  .info-grid {
+    margin-top: 1rem;
+    grid-template-columns: auto;
+  }
+  .info-grid > div p {
+    text-align: center !important;
+  }
   .serv-options .br-img-con {
     display: none;
   }
@@ -581,6 +594,7 @@ header nav ul li:last-child a::after {
   }
   .mission-info {
     width: 100%;
+    gap: 0.5rem;
   }
   .mission-info h2 {
     text-align: center !important;
@@ -842,6 +856,7 @@ form a.submit {
   grid-template-columns: auto auto;
   place-items: center;
   margin-top: 2rem;
+  gap: 1rem;
 }
 .info-grid > div {
   width: min(652px, 100%);
@@ -1016,6 +1031,12 @@ form a.submit {
 @media (max-width: 1300px) {
   header nav ul li a {
     margin: 0 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  p {
+    font-size: 17px !important;
   }
 }
 
@@ -1244,6 +1265,13 @@ form a.submit {
   }
 }
 @media (max-width: 1000px) {
+  .info-grid {
+    margin-top: 1rem;
+    grid-template-columns: auto;
+  }
+  .info-grid > div p {
+    text-align: center !important;
+  }
   .serv-options .br-img-con {
     display: none;
   }
@@ -1254,6 +1282,7 @@ form a.submit {
   }
   .mission-info {
     width: 100%;
+    gap: 0.5rem;
   }
   .mission-info h2 {
     text-align: center !important;

@@ -39,12 +39,12 @@
         margin-top: 6rem;
         position: relative;
     h2 {
-        font-size: $xl-fz;
+        font-size: clamp($b-fz, 6vw, $xl-fz);
         font-family: $secFont;
         font-weight: normal;
 
         span {
-            font-size: clamp($xh-fz, 6vw, $xxh-fz);
+            font-size: clamp($h-fz, 6vw, $xxh-fz);
             display: block;
             font-family: $priFont;
         }

@@ -123,14 +123,14 @@ h2 {
 }
 
 .mainHeading {
-  font-size: $l-fz;
+  font-size: clamp($l-fz, 6vw, $b-fz);
   font-family: $secFont;
   font-weight: normal;
   text-align: center;
   position: relative;
 
   span {
-      font-size: clamp($h-fz, 6vw, $xh-fz);
+      font-size: clamp($xxl-fz, 6vw, $xh-fz);
       display: block;
       font-family: $priFont;
   }

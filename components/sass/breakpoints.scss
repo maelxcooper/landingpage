@@ -53,6 +53,13 @@ header {
 }
 
 
+p {
+  @include respond-to(lg) {
+    font-size:$s2-fz !important;
+  }
+}
+
+
 // Header Area
 @include respond-to(lg) {
 html.blur {
@@ -295,7 +302,14 @@ right: 0 !important;
       grid-template-columns: auto;
     }
  }
+ .info-grid {
+  margin-top: 1rem;
+  grid-template-columns: auto;
 
+  > div p {
+    text-align: center !important; 
+  }
+}
 .serv-options .br-img-con {
   display: none;
 }
@@ -310,6 +324,7 @@ right: 0 !important;
 
   .mission-info {
     width: 100%;
+    gap: 0.5rem;
 
     h2 {
       text-align: center !important;
