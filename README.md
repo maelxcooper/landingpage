@@ -8,18 +8,16 @@ This project showcases my skills in converting a sample design layout into a res
 - **Author**: Prince Caballes
 - **Date**: June 2024
 
-
 ## Introduction
 
-This project involves converting a given design mockup into a fully responsive web page using modern front-end technologies. The layout adjusts seamlessly across different screen sizes and devices, ensuring a great user experience.
-
+This project involves converting a given design mockup into a fully responsive web page using modern front-end technologies. The layout adjusts seamlessly across different screen sizes and devices, ensuring a great user experience. The original design was provided by Proweaver. All text content is placeholder text (lorem ipsum).
 
 ## Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript 
-- Sass/Scss
+- JavaScript/jQuery
+- Sass/SCSS
 
 ## Features
 
@@ -27,3 +25,9 @@ This project involves converting a given design mockup into a fully responsive w
 - Clean and semantic HTML markup
 - Modular and maintainable CSS
 - Animations
+
+## Credits
+
+- **Design:** Provided by Proweaver.
+- **Implementation:** Developed by Prince Caballes using HTML, CSS, Sass/SCSS, and JavaScript/jQuery.
+- **Content:** All text content is placeholder text (lorem ipsum).
